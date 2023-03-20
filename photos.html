@@ -1,0 +1,152 @@
+<!DOCTYPE >
+<html>
+<head>
+    <meta charset="UTF-8">
+   <title>Document</title>
+   <style>
+                 *{
+         margin: 0;
+         padding: 0;
+         font-family: Century Gothic;
+        }
+        #header{
+            
+          border-bottom: 1px solid black;
+         background-color:  rgba(98, 58, 231, 0.924);
+
+        }
+    
+        #navbar li{
+            display: inline-block;
+            margin: 43px;
+            margin-left: 15.3em;
+
+        }
+        #navbar li a{
+            text-decoration: none;
+            padding: 10px 25px;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar li a:hover{
+            
+            
+            border-bottom: 3px solid whitesmoke;
+        }
+        #navbar li.active a{
+            
+            color:white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid white;
+            font-size: 22px;
+        }
+        #acceuil{
+           position: absolute;
+           top: 2%;
+           right: 88%;
+           
+           
+            
+            width: 60px;
+            height: 68px; 
+            background-image:url("photos/acceuil.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #cours{
+            position: absolute;
+           top: 2%;
+           right: 65%;
+           
+           
+            
+            width: 62px;
+            height: 75px;
+            background-image:url("photos/cours.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #photos{
+            position: absolute;
+            line-height: 55%;
+            top: 2%;
+            right: 43.5%;
+            
+            
+            
+            width: 65px;
+            height: 70px; 
+            background-image:url("photos/photos.png");
+            background-position: center;
+            background-size: cover;   
+        }
+        #HOBBIES{
+            position: absolute;
+            line-height: 50%;
+            top: 2%;
+            right: 22.5%;
+            width: 60px;
+            height: 68px;
+            background-image:url("photos/hobbies.png");
+            background-position: center;
+            background-size: cover;   
+        }
+        #conteneur{
+            position: absolute;
+            top: 17%;
+            right: 0%;
+            left: 0%;
+            display: flex;
+            flex-direction: wrap;
+            flex-wrap: wrap;
+            justify-content: center
+            
+        }
+        .photo{
+             width: 500px;
+             height: 500px;
+             background-color: black;
+             margin-left: 0em;
+             border: 1px solid transparent;
+             border-radius: 1em; 
+              
+        }
+   </style>
+</head>
+<body>
+    <div id="header">
+        <ul id="navbar">
+            <li ><a href="siteperso.html"> ACCEUIL</a></li>
+            <li> <a href="cours.html">COURS</a></li>
+            <li  class="active"><a href="">PHOTOS</a></li>
+            <li><a href="hobbies.html">HOBBIES</a></li>
+        </ul>
+    </div>
+    
+
+    <div id="acceuil" ></div>
+    <div id="cours"></div>
+    <div id="photos"></div>
+    <div id="HOBBIES"></div>
+
+    <h1 align="center" > <u>TROMBINOSCOPE </u>  </h1>
+    <div id="conteneur">
+        <img class="photo" src="photo/perso2.jpg" alt="">
+        <img class="photo" src="photo/1.jpg" alt="">
+        <img class="photo" src="photo/photo3.jpg" alt="">
+        <img class="photo" src="photo/photo2.jpg" alt="">
+        <img class="photo" src="photo/Photo5.jpg" alt="">
+        <img class="photo" src="photo/photo4.jpg" alt="">
+        <img class="photo" src="photo/Real Madrid.jpg" alt="">
+        <img class="photo" src="photo/Naruto.jpeg" alt="">
+        <img class="photo" src="photo/Shika.jpeg" alt="">
+        <img class="photo" src="photo/photo6.jpg" alt="">
+        <img class="photo" src="photo/photo7.jpg" alt="">
+        <img class="photo" src="photo/photo8.jpg" alt="">
+        
+    </div>
+
+</body>
+</html>

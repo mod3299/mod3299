@@ -1,0 +1,212 @@
+<!DOCTYPE >
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>photos</title>
+
+    <style>
+             *{
+         margin: 0;
+         padding: 0;
+         font-family: Century Gothic;
+        
+
+        }
+        #header{
+            
+          border-bottom: 1px solid black;
+         background-color:  rgba(98, 58, 231, 0.924);
+
+        }
+    
+        #navbar li{
+            display: inline-block;
+            margin: 43px;
+            margin-left: 15.3em;
+
+        }
+        #navbar li a{
+            text-decoration: none;
+            padding: 10px 25px;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar li a:hover{
+            
+            
+            border-bottom: 3px solid whitesmoke;
+        }
+        #navbar li.active a{
+            
+            color:white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid white;
+            font-size: 22px;
+        }
+        #acceuil{
+           position: absolute;
+           top: 2%;
+           right: 88%;
+           
+           
+            
+            width: 60px;
+            height: 68px; 
+            background-image:url("acceuil.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #cours{
+            position: absolute;
+           top: 2%;
+           right: 65%;
+           
+           color: whitess;
+            
+            width: 62px;
+            height: 75px;
+            background-image:url("cours.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #photos{
+            position: absolute;
+            line-height: 55%;
+            top: 2%;
+            right: 43.5%;
+            
+            
+            
+            width: 65px;
+            height: 70px; 
+            background-image:url("photos.png");
+            background-position: center;
+            background-size: cover;   
+        }
+        #HOBBIES{
+            position: absolute;
+            line-height: 50%;
+            top: 2%;
+            right: 22.5%;
+            width: 60px;
+            height: 68px;
+            background-image:url("hobbies.png");
+            background-position: center;
+            background-size: cover;   
+        }
+        #conteneur1{
+            position: absolute;
+            top: 24%;
+            right: 0%;
+            left: 0%;
+           
+            display: flex;
+            flex-direction: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        #conteneur2{
+            position: absolute;
+            top: 90%;
+            right: 0%;
+            left: 0%;
+           
+            display: flex;
+            flex-direction: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #cadre{
+             width: 500px;
+             height: 500px;
+             
+             margin-left: 0em;
+             border-left: 1px solid black;
+             border-right: 1px solid black;
+             border-bottom: 1px solid black;
+             margin-left: 1em;
+            
+        }
+        #photo{
+            width: 500px;
+             height: 400px;
+             
+        }
+        #text{
+            position: relative;
+            top: 2em;
+            font-size: 22px;
+            color: white;
+            background-color: blue;
+        }
+        #aprescours{
+           position: absolute;
+           top: 170%;
+           width: 100%;
+       }
+       #hexo{
+           position: absolute;
+           top: 173%;
+           right: 36%;
+           
+             }              
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul id="navbar">
+            <li ><a href="siteperso.html"> ACCEUIL</a></li>
+            <li class="active" > <a  href="">COURS</a></li>
+            <li  ><a href="photos.html">PHOTOS</a></li>
+            <li><a href="hobbies.html">HOBBIES</a></li>
+        </ul>
+    </div>
+    
+
+    <div id="acceuil" ></div>
+    <div id="cours"></div>
+    <div id="photos"></div>
+    <div id="HOBBIES"></div>
+
+    <h1 align="center" > <u>BIENVENUE <br> LA LISTE DES COURS AUQUELS JE ME SUIS INSCRIS</u> </h1>
+    <div id="conteneur1">
+        <div id="cadre" >
+            <a href="https://fad.esp.sn/course/view.php?id=177"> <img id="photo" src="photos/progweb.jpg" alt=""></a>
+            <p id="text" align="center">PROGRAMMATION WEB</p>
+        </div>
+        <div id="cadre" >
+           <a href="https://fad.esp.sn/course/view.php?id=607"> <img id="photo" src="photos/HP-securite-600.jpg""></a>
+            <p id="text" align=center >Sécurité</p>
+        </div>
+        <div id="cadre">
+           <a  href="https://fad.esp.sn/course/view.php?id=175"> <img id="photo" src="photo/Réseaux sans fil.png" alt=""></a>
+            <p id="text" align=center >Rx Sans Fil</p>
+        </div>
+    </div>
+
+       
+       <div id="conteneur2">
+        <div id="cadre" >
+            <a href="https://fad.esp.sn/course/view.php?id=617"><img id="photo" src="photos/tcom.png" alt=""></a>
+             <p id="text" align="center">TECHNIQUES DE COMMUNICATION</p>
+      </div>
+      <div id="cadre" >
+            <a href="https://fad.esp.sn/course/view.php?id=146"> <img id="photo" src="photo/Antenne.jpg" alt=""></a>
+           <p id="text" align=center >ANTENNE</p>
+      </div>
+     <div id="cadre">
+        <a href="https://fad.esp.sn/course/view.php?id=146"> <img id="photo" src="photo/Architecture.jpeg" alt=""></a>
+         <p id="text" align=center >ARCHITECTURE</p>
+     </div>
+    </div>
+
+    
+</body>
+</html>
+

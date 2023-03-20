@@ -1,0 +1,398 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>Mon Site Personnel</title>
+    <script language="javascript">
+        function overinfos(){
+           var x = document.getElementById("continfos");
+           x.style.display = "block" ;
+    
+        }
+        function outinfos(){
+            var x = document.getElementById("continfos");
+           x.style.display = "none" ;
+        }
+        function overtel(){
+           var x = document.getElementById("number");
+           x.style.display = "block" ;
+    
+        }
+        function outtel(){
+            var x = document.getElementById("number");
+           x.style.display = "none" ;
+        }
+        function overphoto(){
+           var x = document.getElementById("zip");
+           x.style.display = "block" ;
+    
+        }
+        function outphoto(){
+            var x = document.getElementById("zip");
+           x.style.display = "none" ;
+        }
+    </script>
+    <style>
+
+        *{
+         margin: 0;
+         padding: 0;
+         font-family: Century Gothic;
+        }
+        
+        
+        body{
+            overflow-y: hidden;
+        }
+        #header{
+            
+          border-bottom: 1px solid black;
+         background-color:  rgba(98, 58, 231, 0.924);
+
+        }
+    
+        #navbar li{
+            display: inline-block;
+            margin: 43px;
+            margin-left: 15em;
+
+        }
+        #navbar li a{
+            text-decoration: none;
+            padding: 10px 25px;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar li a:hover{
+            
+            
+            border-bottom: 3px solid whitesmoke;
+        }
+        #navbar li.active a{
+            
+            color:white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid white;
+            font-size: 22px;
+        }
+        
+        #contactcontains{
+          list-style: none;
+          float: left;
+          position: fixed;
+          top: 36%;
+        }
+        #contactcontains li a{
+            display: flex;
+            flex-direction: column;
+            width: 40px;
+            height: 70px; 
+            padding: 10px 25px;
+            font-size: 20px;
+            
+            text-decoration:none ;
+            border: 1px solid black;
+            border-radius: 30%;
+            box-shadow: 0 0px 5px 5Px #00000070;
+            padding: 5px 20px;
+            margin: 10px;
+            transition:  0,4s ease-in;
+
+        }
+
+        #cc1{
+            background-image: url("photos/facebook.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #cc2{
+            background-image: url("photos/instagram.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #cc3{
+            background-image: url("photos/twitter.jpg");
+            background-position: center;
+            background-size: cover;
+            
+        }
+        #cc4{
+            background-image: url("photos/mail.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        #contactcontains li a:hover{
+            transform: translateX(5%);
+        }
+        #acceuil{
+           position: absolute;
+           top: 2%;
+           right: 88%;
+           
+           
+            
+            width: 60px;
+            height: 68px; 
+            background-image:url("photos/acceuil.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #cours{
+            position: absolute;
+           top: 2%;
+           right: 65%;
+           
+           
+            
+            width: 62px;
+            height: 75px;
+            background-image:url("photos/cours.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #photos{
+            position: absolute;
+            line-height: 55%;
+            top: 2%;
+            right: 43.5%;
+            
+            
+            
+            width: 65px;
+            height: 70px; 
+            background-image:url("photos/photo.png");
+            background-position: center;
+            background-size: cover;   
+        }
+        #HOBBIES{
+            position: absolute;
+            line-height: 50%;
+            top: 2%;
+            right: 22.5%;
+            width: 60px;
+            height: 68px;
+            background-image:url("photos/hobbies.png");
+            background-position: center;
+            background-size: cover;   
+        }
+        
+        #blog{
+            position: absolute;
+            top: 3.2em;
+            width: 100%;
+             
+            border-bottom: 1px solid black;
+        }
+        #search{
+            position: relative;
+            top: 4em;
+            right:-55em;
+            border: 1px solid black;
+            height: 2em;
+            width: 15em;
+        }
+        #tel{
+            position: absolute;
+            top: 45%;
+            right: 13em;
+            line-height: 50%;
+           
+            width: 60px;
+            height: 68px;
+            background-image:url("photos/iconfinder_phone_1954539.png");
+            background-position: center;
+            background-size: cover;   
+        }
+       
+        
+        #number{
+           
+            position: absolute;
+            top: 11em;
+            right: 10em;
+            border: 1px solid black;
+            background-color: green;
+            color: white;
+            border-radius: 10em;
+            width: 10em;
+            height: 1.5em;
+            line-height: normal;
+            text-align: center;
+            display: none;
+           
+        }
+       
+        
+        #image{
+            position: relative;
+            left: 0em;
+            top: -0.205em;
+            width: 12em;
+            height:12em;
+            border: 1px solid transparent;
+            border-radius: 10em;
+            
+        }
+       
+        #butinfos{
+            position: absolute;
+    
+            right: 5em;
+            top: 11em;
+            border: 1px solid black;
+            width: 8em;
+            height: 1.5em;
+            border-radius: 5em;
+            background-color: blueviolet;
+            color: white;
+            
+
+        }
+        #continfos{
+        
+            position: absolute;
+            display: none;
+            top: 100%;
+            right: 0%;
+            border: 1PX solid black;
+            width: 50em;
+            height: 30em;
+
+
+        }
+        #textinfos{
+            position: relative;
+            right: 0%;
+            height:100%;
+            width: 38%;
+            border-right: 1px solid black;
+            text-align: center;
+            background-color: #445268;
+            color: white;
+            
+            
+        }
+        #imginfos{
+            position: relative;
+            top: -30em;
+            right: -19em;
+            height: 100%;
+            width: 62%;
+        }
+       
+        
+        .bigphoto{
+            position: absolute;
+            right: 39%;
+            top: 35%;
+          width: 50Opx;
+          height: 450px;
+            
+            
+        }
+       
+        #zip{
+            position: absolute;
+            top: 35%;
+            right: 68%;
+             width:32em;
+             height: 40em;
+             border-radius: 2em;
+             border: 1px solid black;
+             background-color: transparent;
+             color:black;
+             font-size: 15px;
+            
+              margin-left:3em;
+              display: none;
+             
+        }
+        #zip h1{
+            padding-top: 1.3em;
+            margin-left:0.5em;
+        }
+        .zip:hover{
+            background-color: blue;
+            color: white;
+            transform: scaleY(0.9);
+            box-shadow:  5px  5px  5px  5px   black;
+        }
+    </style>
+    
+</head>
+<body id="bro">
+    
+    <img class="bigphoto" src="photos/imagefontb.jpg" alt="">
+       
+    
+    <div id="contact">
+        <ul id="contactcontains">
+            <li><a id="cc1" href="#"></a></li>
+            <li><a id="cc2" href="#"></a></li>
+            <li><a id="cc3" href="#"></a></li>
+            <li><a id="cc4" href="#"></a></li>
+        </ul>
+    </div>
+    <div id="header">
+        <ul id="navbar">
+            <li  class="active"><a  href=""> ACCEUIL</a></li>
+            <li> <a href="cours.html">COURS</a></li>
+            <li><a href="photos.html">PHOTOS</a></li>
+            <li><a href="hobbies.html">HOBBIES</a></li>
+        </ul>
+    </div>
+    
+
+       <div id="acceuil" ></div>
+       <div id="cours"></div>
+       <div id="photos"></div>
+       <div id="HOBBIES"></div>
+
+
+    <div id="blog">
+
+         <h1 align="center" style="position: relative;top: 6em;">Mouhamed Ousmane DIOP</h1> 
+        <form action="">
+            <input placeholder="wdyw" id= "search" type="search">
+            <input id="search" style="background-color: blue;color:white;" type="submit" value="rechercher">
+        </form>
+        <div id="tel" onmouseover="overtel()" onmouseout="outtel()"> 
+        </div>
+        <div id="number">+221 783740234</div>
+        <img id="image" src="photo/perso2.jpg" onmouseover="overphoto()" onmouseout="outphoto()" >
+        <button id="butinfos" onmouseover="overinfos()" onmouseout="outinfos()"> <FONT size="4" >INFOS</FONT></button>
+        <div id="infos">
+            
+            <div id="continfos">
+                <h1 id="textinfos">NOM:DIOP PRENOM:Mouhamed Ousmane<br> <hr>
+                    Bienvenue dans mon blog personnel.Dans ce blog ,<br>
+                    je vous présente la listes des cours auquels je suis inscrits,<br>
+                    j'ai collectionné mes photos et partagé mes HOBBIES.
+                </h1>
+                <img id="imginfos" src="photo/perso2.jpg" >
+            </div>
+            
+        </div>
+      
+       
+   </div>  
+   
+   <div id="zip">
+     <h1>Nom: DIOP</h1> <br>
+     <h1>PRENOM:Mouhamed Ousmane</h1> <br>
+     <h1>NÉ LE 02/01/2001</h1> <br>
+     <h1>ETAT CIVIL:CÉLIBATAIRE</h1><br>
+     <h1>ETABLISSEMENT:ESP</h1><br>
+     <h1>FORMATION:LSRT </h1>  
+     
+
+   </div>
+
+
+   
+    
+    
+</body>
+
+</html>
